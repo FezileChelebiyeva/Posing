@@ -17,15 +17,15 @@ const Header = () => {
               {navigation.map((nav, i) => {
                 return (
                   <li key={i} className={styles.nav_list}>
-                    <Link to={nav.path}>{nav.name}</Link>
+                    <Link className={styles.link} to={nav.path}>{nav.name}</Link>
                   </li>
                 );
               })}
             </ul>
           </div>
           <div className={styles.login_start}>
-            <div className="login">Login</div>
-            <Button text="Start For Free"></Button>
+            <div className={styles.login}>Login</div>
+            <Button className={styles.contact_btn} text="Start For Free"></Button>
           </div>
         </div>
       </div>

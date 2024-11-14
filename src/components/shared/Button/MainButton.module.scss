@@ -4,7 +4,7 @@
   border: 0;
   outline: 0;
   border-radius: 7px;
-  background: linear-gradient(to right, #398c89 50%, #52c8c4 50%);
+  background: linear-gradient(to right, #4965b2 50%, #6990ff 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: background-position 0.4s ease, color 0.4s ease;
@@ -20,10 +20,12 @@
     width: 15px;
     height: 15px;
     transform: rotate(45deg);
-    top: 50%;
+    transform-origin: left;
+    top: 35%;
     left: -12px;
     margin-top: -5px;
     transition: all 0.4s ease;
+    opacity: 0;
   }
 
   &:hover {
@@ -33,9 +35,12 @@
 
   &:hover {
     .arrow {
-      background: #fff;
-      left: -9px;
+      background: linear-gradient(to left bottom, #fff 50%, transparent 50%);
+      transform: rotate(45deg);
       z-index: 2;
+      transition-delay: .2s;
+      opacity: 1;
+      left: -6px;
       &::before {
         content: "";
         border: solid #6990ff;

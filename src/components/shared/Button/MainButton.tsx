@@ -12,14 +12,21 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({
   text,
   onClick,
-  className,
+  className = "",
   type = "button",
   disabled = false,
 }) => {
-  return <button className={styles.main_button}>
-    <span className={styles.arrow}></span>
-    <span className={styles.button_text}>{text}</span>
-  </button>;
+  return (
+    <button
+      className={`${styles.main_button} ${className}`}
+      onClick={onClick}
+      type={type}
+      disabled={disabled}
+    >
+      <span className={styles.arrow}></span>
+      <span className={styles.button_text}>{text}</span>
+    </button>
+  );
 };
 
 export default Button;

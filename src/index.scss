@@ -38,7 +38,8 @@
 // inters
 @font-face {
   font-family: "Inter";
-  src: url("./assets/fonts/Inter/static/Inter_18pt-ExtraBold.ttf") format("opentype");
+  src: url("./assets/fonts/Inter/static/Inter_18pt-ExtraBold.ttf")
+    format("opentype");
   font-weight: 800;
 }
 @font-face {
@@ -48,17 +49,20 @@
 }
 @font-face {
   font-family: "Inter";
-  src: url("./assets/fonts/Inter/static/Inter_18pt-SemiBold.ttf") format("opentype");
+  src: url("./assets/fonts/Inter/static/Inter_18pt-SemiBold.ttf")
+    format("opentype");
   font-weight: 600;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./assets/fonts/Inter/static/Inter_18pt-Medium.ttf") format("opentype");
+  src: url("./assets/fonts/Inter/static/Inter_18pt-Medium.ttf")
+    format("opentype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("opentype");
+  src: url("./assets/fonts/Inter/static/Inter_18pt-Regular.ttf")
+    format("opentype");
   font-weight: 400;
 }
 @font-face {
@@ -66,7 +70,6 @@
   src: url("./assets/fonts/Inter/static/Inter_18pt-Thin.ttf") format("opentype");
   font-weight: 300;
 }
-
 
 html,
 body {
@@ -77,6 +80,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1;
   overflow-x: hidden;
+  color: #1c2528;
 }
 input,
 button,
@@ -90,6 +94,11 @@ button {
   cursor: pointer;
   background-color: inherit;
 }
-a{
+a {
   cursor: pointer;
+  color: #1c2528;
+}
+  
+p {
+  color: #6b6b6b;
 }

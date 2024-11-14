@@ -1,0 +1,124 @@
+#hero_section {
+  background-image: url("../../../../assets/images/home/hero-section/hero_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 60px 0;
+  margin-top: 80px;
+  .hero_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    .hero_text {
+      width: 45%;
+      .hero_first_title {
+        font-weight: 400;
+        font-size: 16px;
+        color: #47c4c0;
+      }
+      .hero_title {
+        margin: 8px 0;
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 84px;
+      }
+      .hero_subtitle {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 1.5em;
+      }
+
+    }
+    .hero_image {
+      width: 550px;
+      height: 550px;
+      background-image: url("../../../../assets/images/home/hero-section/hero_img_bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .hero_shapes {
+    .shape_1 {
+      position: absolute;
+      left: 5%;
+      top: 62.5%;
+      animation: animo-x 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .shape_2 {
+      position: absolute;
+      left: 30%;
+      top: 80%;
+      animation: animo-y 6s cubic-bezier(0.25, 0, 0.2, 1) infinite;
+    }
+    .shape_3 {
+      position: absolute;
+      left: 40%;
+      top: 20%;
+      animation: swing-anim 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .shape_4 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      animation: particalAnimation 9s alternate infinite linear;
+    }
+    .shape_5 {
+      position: absolute;
+      left: 90%;
+      top: 5%;
+      animation: semi-rotate-anim 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .shape_6 {
+      position: absolute;
+      left: 90%;
+      top: 75%;
+      animation: up-down-anim 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+  }
+}
+
+@keyframes animo-x {
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes animo-y {
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes swing-anim {
+  65% {
+    transform: translateY(-50px) rotate(-75deg);
+  }
+}
+
+@keyframes particalAnimation {
+  50% {
+    transform: translate(20px, 100px);
+  }
+}
+
+@keyframes semi-rotate-anim {
+  50% {
+    transform: translateY(25px) rotate(-55deg);
+  }
+}
+
+@keyframes up-down-anim {
+  40% {
+    transform: translateY(40px) rotate(-1deg);
+  }
+}
