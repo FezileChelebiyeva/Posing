@@ -1,0 +1,40 @@
+.main_button {
+  position: relative;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  outline: 0;
+  border-radius: 7px;
+  background: linear-gradient(to right, #398c89 50%, #52c8c4 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #fff;
+  cursor: pointer;
+  transition: background-position 0.4s ease, color 0.4s ease;
+  position: relative;
+
+  &:hover {
+    background-position: left bottom;
+    color: #fff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    top: 50%;
+    left: -15px;
+    margin-top: -7px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::before {
+    background: #fff;
+    left: -6px;
+    z-index: 2;
+    transition-delay: 0.25s;
+  }
+}
