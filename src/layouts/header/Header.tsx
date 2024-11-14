@@ -9,24 +9,24 @@ const Header = () => {
     <header id={styles.header}>
       <div className="container">
         <div className={styles.header}>
-          <div className="logo">
+          <div className={styles.logo}>
             <img src={siteLogo} alt="site-logo" />
           </div>
-        </div>
-        <div className="navlinks">
-          <ul className="navlink_lists">
-            {navigation.map((nav, i) => {
-              return (
-                <li key={i} className="nav_list">
-                  <Link to={nav.path}>{nav.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="login_start">
-          <div className="login">Login</div>
-          <Button text="Start For Free"></Button>
+          <div className={styles.navlinks}>
+            <ul className={styles.navlink_lists}>
+              {navigation.map((nav, i) => {
+                return (
+                  <li key={i} className={styles.nav_list}>
+                    <Link to={nav.path}>{nav.name}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className={styles.login_start}>
+            <div className="login">Login</div>
+            <Button text="Start For Free"></Button>
+          </div>
         </div>
       </div>
     </header>

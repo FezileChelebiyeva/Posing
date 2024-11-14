@@ -16,7 +16,10 @@ const Button: React.FC<ButtonProps> = ({
   type = "button",
   disabled = false,
 }) => {
-  return <button className={styles.main_button}>{text}</button>;
+  return <button className={styles.main_button}>
+    <span className={styles.arrow}></span>
+    <span className={styles.button_text}>{text}</span>
+  </button>;
 };
 
 export default Button;
