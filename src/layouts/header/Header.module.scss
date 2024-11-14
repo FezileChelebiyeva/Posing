@@ -29,26 +29,146 @@
         }
       }
     }
-    .login_start {
+    .header_end {
       display: flex;
       align-items: center;
       column-gap: 20px;
-      .login {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 18px;
-        transition: color 0.4s ease;
-        cursor: pointer;
-        &:hover {
-          color: #6990ff;
+      .login_start {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        .login {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+          transition: color 0.4s ease;
+          cursor: pointer;
+          &:hover {
+            color: #6990ff;
+          }
+        }
+        .contact_btn {
+          background: linear-gradient(to right, #398c89 50%, #52c8c4 50%);
+          background-size: 200% 100%;
+          background-position: right bottom;
+          &:hover {
+            background-position: left bottom;
+          }
         }
       }
-      .contact_btn {
-        background: linear-gradient(to right, #398c89 50%, #52c8c4 50%);
-        background-size: 200% 100%;
-        background-position: right bottom;
-        &:hover {
-          background-position: left bottom;
+    }
+    .icon_button {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      display: none;
+      .icon {
+        position: absolute;
+        font-size: 35px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        cursor: pointer;
+      }
+
+      .menu_icon {
+        transform: rotate(0deg);
+        opacity: 1;
+      }
+
+      .close_icon {
+        transform: rotate(90deg);
+        opacity: 0;
+      }
+
+      &.active {
+        .menu_icon {
+          transform: rotate(90deg);
+          opacity: 0;
+        }
+
+        .close_icon {
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+      }
+    }
+    .mobile_navbar {
+      width: 100%;
+      position: absolute;
+      border-top: 1px solid #e5e5e5;
+      background: #fff;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: transform 0.4s ease;
+      .navlink_lists {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+        .nav_list {
+          margin-bottom: 12px;
+          .link {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px;
+            transition: color 0.4s ease;
+            &:hover {
+              color: #6990ff;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1140px) {
+    .header {
+      .navlinks {
+        .navlink_lists {
+          column-gap: 25px;
+        }
+      }
+    }
+  }
+  @media (max-width: 993px) {
+    .header {
+      .icon_button {
+        display: block;
+      }
+      .navlinks {
+        display: none;
+      }
+      .active_navbar {
+        transition: transform 0.4s ease;
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .header {
+      .logo {
+        img {
+          width: 110px;
+        }
+      }
+      .header_end {
+        column-gap: 8px;
+        .login_start {
+          column-gap: 8px;
+          .login {
+            font-size: 12px;
+          }
+        }
+      }
+      .icon_button {
+        width: 25px;
+        height: 25px;
+        .icon {
+          font-size: 25px;
         }
       }
     }

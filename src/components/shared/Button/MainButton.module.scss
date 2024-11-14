@@ -55,4 +55,11 @@
       }
     }
   }
+
+  @media (max-width: 576px) {
+    padding: 8px 15px;
+    .button_text{
+      font-size: 12px;
+    }
+  }
 }
