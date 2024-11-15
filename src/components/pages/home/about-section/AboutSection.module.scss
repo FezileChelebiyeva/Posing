@@ -1,0 +1,128 @@
+#about_section {
+  background: linear-gradient(257.51deg, #f2fcfe 44.07%, #faf1fe 100%);
+  padding: 80px 0;
+  .about_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+    .about_image {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    .about_details {
+      width: 50%;
+      .first_title {
+        font-size: 16px;
+        line-height: 18px;
+        color: #52c8c4;
+      }
+      .about_title {
+        font-size: 42px;
+        color: #1c2528;
+        font-weight: 600;
+        line-height: 48px;
+        margin: 20px 0;
+        font-family: "Poppins", sans-serif;
+      }
+      .about_subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        color: #6b6b6b;
+        margin-bottom: 2px;
+      }
+      .information_section {
+        display: flex;
+        column-gap: 20px;
+        margin-top: 40px;
+        .left_section {
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+          .info_card {
+            display: flex;
+            column-gap: 10px;
+            .info_text {
+              .info_title {
+                font-size: 20px;
+                margin-bottom: 5px;
+                font-family: "Poppins", sans-serif;
+              }
+              .info_subtitle {
+                font-size: 16px;
+                line-height: 22px;
+                color: #6b6b6b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .about_section {
+      column-gap: 40px;
+      .about_details {
+        .about_title {
+          margin: 15px 0;
+          font-size: 40px;
+          line-height: 44px;
+        }
+        .information_section {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    .about_section {
+      flex-direction: column;
+      row-gap: 50px;
+      .about_image {
+        width: 100%;
+      }
+      .about_details {
+        width: 100%;
+        .about_subtitle {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about_section {
+      row-gap: 40px;
+      .about_details {
+        .about_subtitle {
+          max-width: 100%;
+        }
+        .about_title {
+          font-size: 35px;
+          line-height: 38px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .about_section {
+      .about_details {
+        .about_title {
+          font-size: 30px;
+          line-height: 32px;
+        }
+        .information_section {
+          flex-direction: column-reverse;
+          row-gap: 30px;
+        }
+      }
+    }
+  }
+}
