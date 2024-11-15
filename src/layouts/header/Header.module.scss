@@ -127,12 +127,17 @@
         overflow: hidden;
         transition: max-height 0.6s ease;
         .navlink_lists {
+          width: 100%;
           flex-direction: column;
           align-items: flex-start;
-          margin-top: 25px;
+          row-gap: 25px;
+          margin: 25px 0;
           .nav_list {
-            margin-bottom: 25px;
+            width: 100%;
             .link {
+              display: block;
+              width: 100%;
+              height: 100%;
               font-size: 18px;
               font-weight: 400;
               line-height: 18px;
