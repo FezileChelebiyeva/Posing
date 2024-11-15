@@ -5,7 +5,7 @@ import heroImage from "../../../../assets/images/home/hero-section/hero_img.png"
 import shapes from "../../../../constants/shapes.constats";
 const HeroSection = () => {
   return (
-    <div id={styles.hero_section}>
+    <section id={styles.hero_section}>
       <div className="container">
         <div className={styles.hero_section}>
           <div className={styles.hero_text}>
@@ -31,7 +31,7 @@ const HeroSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
