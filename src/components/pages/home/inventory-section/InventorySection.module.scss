@@ -36,20 +36,34 @@
         background-color: #fff;
         padding: 40px 30px;
         position: relative;
-        .icon_image {
-          height: 70px;
-          width: 70px;
-          margin-bottom: 18px;
-          background-color: #6990ff;
-          transition: all 0.25s linear;
+        .shadow {
+          height: 82px;
+          width: 82px;
+          box-shadow: 0 0 0 #6990ff;
           border-radius: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top: 20px;
-          position: relative;
+          margin-bottom: 20px;
+          .icon_image {
+            height: 70px;
+            width: 70px;
+            margin-bottom: 18px;
+            background-color: #6990ff;
+            transition: all 1s linear, box-shadow 0.4s ease-in-out;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 18px;  
+            position: relative;
+          }
           &:hover {
-            transform: scale(0.94);
+            .icon_image {
+              transform: scale(0.92);
+            }
+            box-shadow: 0 0 20px 5px #6990ff;
+            animation: shadow-grow 1s ease-in-out forwards;
           }
         }
         .card_title {
@@ -133,5 +147,14 @@
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes shadow-grow {
+  0% {
+    box-shadow: 0 0 0 #6990ff;
+  }
+  100% {
+    box-shadow: 0 0 30px 10px #6991ff00;
   }
 }

@@ -15,8 +15,10 @@ const InventorySection = () => {
             {inventory_cards.map((card: any, idx: number) => {
               return (
                 <div className={styles.inventory_card}>
-                  <div className={styles.icon_image}>
-                    <img src={card.icon_image} alt="" />
+                  <div className={styles.shadow}>
+                    <div className={styles.icon_image}>
+                      <img src={card.icon_image} alt="" />
+                    </div>
                   </div>
                   <h3 className={styles.card_title}>{card.title}</h3>
                   <p className={styles.card_description}>{card.description}</p>
