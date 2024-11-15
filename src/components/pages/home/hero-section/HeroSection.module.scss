@@ -24,6 +24,7 @@
         font-weight: 800;
         font-size: 80px;
         line-height: 84px;
+        font-family: 'Poppins', sans-serif;
       }
       .hero_subtitle {
         margin-bottom: 40px;
@@ -44,6 +45,9 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+    .hero_btn{
+      width: 180px;
     }
   }
   .hero_shapes {
@@ -84,10 +88,26 @@
       animation: up-down-anim 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
   }
-
+  @media (max-width: 1200px) {
+    .hero_section {
+      .hero_image {
+        width: 510px;
+        height: 510px;
+      }
+    }
+  }
+  @media (max-width: 1124px) {
+    .hero_section {
+      .hero_image {
+        width: 455px;
+        height: 455px;
+      }
+    }
+  }
   @media (max-width: 993px) {
     .hero_section {
       flex-direction: column;
+      row-gap: 30px;
       .hero_text {
         width: 100%;
         .hero_title {
