@@ -1,0 +1,133 @@
+#inventory_section {
+  background-image: url("../../../../assets/images/home/inventory-section/inventory_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0;
+  .inventory_section {
+    .section_head {
+      .first_title {
+        text-align: center;
+        visibility: visible;
+        animation-duration: 1s;
+        animation-delay: 0.3s;
+        animation-name: fadeInUp;
+        color: #52c8c4;
+      }
+      .section_title {
+        text-align: center;
+        font-size: 42px;
+        margin-top: 20px;
+        color: #1c2528;
+        font-weight: 600;
+        line-height: 46px;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    .inventory_cards_container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 40px;
+      .inventory_card {
+        width: 23%;
+        box-shadow: 0px 10px 50px rgba(28, 37, 40, 0.07);
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 40px 30px;
+        position: relative;
+        .icon_image {
+          height: 70px;
+          width: 70px;
+          background-color: #6990ff;
+          margin-bottom: 28px;
+          transition: all 0.25s linear;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+        }
+        .card_title {
+          font-size: 20px;
+          font-family: "Poppins", sans-serif;
+          margin-bottom: 10px;
+          line-height: 24px;
+        }
+        .card_description {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        .card_number {
+          right: 15px;
+          top: 15px;
+          font-weight: 600;
+          font-size: 60px;
+          color: transparent;
+          -webkit-text-stroke: 1px #52c8c4;
+          position: absolute;
+          opacity: 0.3;
+        }
+
+        &:nth-child(odd) {
+          transform: translateY(25px);
+        }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    .inventory_section {
+      .inventory_cards_container {
+        column-gap: 20px;
+        .inventory_card {
+          padding: 30px 20px;
+        }
+      }
+    }
+  }
+  @media (max-width: 993px) {
+    .inventory_section {
+      .inventory_cards_container {
+        gap: 20px;
+        .inventory_card {
+          width: 48%;
+          padding: 40px 30px;
+          &:nth-child(odd) {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    padding: 40px 0;
+    .inventory_section {
+      .section_head {
+        .section_title {
+          margin-top: 5px;
+          font-size: 30px;
+        }
+      }
+      .inventory_cards_container {
+        gap: 20px;
+        .inventory_card {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 35px, 0);
+    transform: translate3d(0, 35px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
