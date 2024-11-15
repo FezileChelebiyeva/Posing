@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  padding: 60px 0;
+  padding: 80px 0;
   margin-top: 73px;
   .hero_section {
     width: 100%;
@@ -105,6 +105,7 @@
     }
   }
   @media (max-width: 993px) {
+    padding: 50px 0;
     .hero_section {
       flex-direction: column;
       row-gap: 30px;
