@@ -20,7 +20,9 @@ const InventorySection = () => {
                   </div>
                   <h3 className={styles.card_title}>{card.title}</h3>
                   <p className={styles.card_description}>{card.description}</p>
-                  <div className={styles.card_number}>{String(idx + 1).padStart(2, "0")}</div>
+                  <div className={styles.card_number}>
+                    {String(idx + 1).padStart(2, "0")}
+                  </div>
                 </div>
               );
             })}
