@@ -114,13 +114,13 @@
       }
     }
   }
-  @media (max-width: 993px) {
+  @media (max-width: 1024px) {
     padding: 50px 0;
     .inventory_section {
       .inventory_cards_container {
         gap: 20px;
         .inventory_card {
-          width: 48%;
+          width: 48.5%;
           padding: 40px 30px;
           &:nth-child(odd) {
             transform: translateY(0);
