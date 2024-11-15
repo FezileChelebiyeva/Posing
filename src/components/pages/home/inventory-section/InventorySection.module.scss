@@ -37,34 +37,35 @@
         padding: 40px 30px;
         position: relative;
         .shadow {
-          height: 82px;
-          width: 82px;
+          height: 78px;
+          width: 78px;
           box-shadow: 0 0 0 #6990ff;
           border-radius: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
           margin-bottom: 20px;
+          margin-left: -10px;
           .icon_image {
             height: 70px;
             width: 70px;
             margin-bottom: 18px;
             background-color: #6990ff;
-            transition: all 1s linear, box-shadow 0.4s ease-in-out;
+            transition: all 0.5s linear, box-shadow 0.4s ease-in-out;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 18px;  
+            margin-top: 18px;
             position: relative;
           }
-          &:hover {
-            .icon_image {
-              transform: scale(0.92);
-            }
-            box-shadow: 0 0 20px 5px #6990ff;
-            animation: shadow-grow 1s ease-in-out forwards;
-          }
+          // &:hover {
+          //   .icon_image {
+          //     transform: scale(0.94);
+          //   }
+          //   box-shadow: 0 0 20px 5px #6990ff;
+          //   animation: shadow-grow 1s ease-in-out forwards;
+          // }
         }
         .card_title {
           font-size: 20px;
@@ -90,6 +91,15 @@
 
         &:nth-child(odd) {
           transform: translateY(25px);
+        }
+        &:hover {
+          .shadow {
+            .icon_image {
+              transform: scale(0.94);
+            }
+            box-shadow: 0 0 20px 5px #6990ff;
+            animation: shadow-grow 1s ease-in-out forwards;
+          }
         }
       }
     }
