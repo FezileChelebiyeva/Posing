@@ -6,7 +6,7 @@ import SlotCounter from "react-slot-counter";
 const FactsCounterSection = () => {
   return (
     <section id={styles.facts_counter_section}>
-      <div className="container">
+      <div className={styles.container_facts_section}>
         <div className={styles.facts_section}>
           <div className={styles.facts_container}>
             {facts.map((element: any, idx: number) => {
