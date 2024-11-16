@@ -59,19 +59,13 @@
             margin-top: 18px;
             position: relative;
           }
-          // &:hover {
-          //   .icon_image {
-          //     transform: scale(0.94);
-          //   }
-          //   box-shadow: 0 0 20px 5px #6990ff;
-          //   animation: shadow-grow 1s ease-in-out forwards;
-          // }
         }
         .card_title {
           font-size: 20px;
           font-family: "Poppins", sans-serif;
           margin-bottom: 10px;
           line-height: 24px;
+          font-weight: 600;
         }
         .card_description {
           font-size: 16px;
