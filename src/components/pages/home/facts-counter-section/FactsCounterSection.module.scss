@@ -1,0 +1,46 @@
+#facts_counter_section {
+  padding: 80px 0;
+  .facts_section {
+    .facts_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6990ff;
+      border-radius: 10px;
+      padding: 85px 60px;
+      .fact_card {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 2%;
+
+        .fact_icon {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .fact_counter {
+          .counter_number {
+            font-size: 40px;
+            color: #fff;
+            font-family: "Poppins", sans-serif;
+          }
+          .fact_title {
+            font-size: 20px;
+            font-family: "Poppins", sans-serif;
+            color: #ffffffa6;
+            margin-top: 5px;
+          }
+        }
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+  }
+}
