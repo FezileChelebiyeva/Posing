@@ -123,7 +123,7 @@
       }
     }
   }
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     padding: 30px 0;
     .inventory_section {
       .section_head {
@@ -136,6 +136,10 @@
         gap: 20px;
         .inventory_card {
           width: 100%;
+          padding-top: 25px;
+          .card_number{
+            top: 30px;
+          }
         }
       }
     }
