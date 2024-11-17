@@ -4,6 +4,7 @@ import InventorySection from "../../components/pages/home/inventory-section/Inve
 import AboutSection from "../../components/pages/home/about-section/AboutSection";
 import FactsCounterSection from "../../components/pages/home/facts-counter-section/FactsCounterSection";
 import FeaturesSection from "../../components/pages/home/features-section/FeaturesSection";
+import StoreSection from "../../components/pages/home/store-section/StoreSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <AboutSection />
       <FactsCounterSection />
       <FeaturesSection />
+      <StoreSection />
     </div>
   );
 };
