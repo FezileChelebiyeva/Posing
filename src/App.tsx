@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.scss";
 import ROUTES from "./routes";
+import { useEffect, useState } from "react";
+import Spinner from "./components/shared/Spinner/Spinner";
 
 const router = createBrowserRouter(ROUTES, {
   future: {
@@ -9,15 +11,24 @@ const router = createBrowserRouter(ROUTES, {
     v7_normalizeFormMethod: true,
     v7_fetcherPersist: true,
     v7_partialHydration: true,
-    v7_skipActionErrorRevalidation: true
-  } as any
+    v7_skipActionErrorRevalidation: true,
+  } as any,
 });
 
-
 function App() {
+  const [isLoading, setIsLoading] = useState<any>(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      {isLoading ? <Spinner /> : <RouterProvider router={router} />}
     </div>
   );
 }
