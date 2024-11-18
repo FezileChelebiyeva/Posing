@@ -9,6 +9,7 @@ import PricingSection from "../../components/pages/home/pricing-section/PricingS
 import OurClientsSection from "../../components/pages/home/our-clients/OurClientsSection";
 import PartnersSection from "../../components/pages/home/partners-secton/PartnersSection";
 import QuestionsSection from "../../components/pages/home/questions-section/QuestionsSection";
+import NewsSection from "../../components/pages/home/news-section/NewsSection";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <OurClientsSection />
       <PartnersSection />
       <QuestionsSection />
+      <NewsSection />
     </div>
   );
 };
