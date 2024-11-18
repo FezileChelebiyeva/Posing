@@ -40,6 +40,7 @@ const OurClientsSection = () => {
           </div>
           <div className={styles.our_clients_comments}>
             <Swiper
+              speed={1500}
               slidesPerView={3}
               spaceBetween={30}
               pagination={{
