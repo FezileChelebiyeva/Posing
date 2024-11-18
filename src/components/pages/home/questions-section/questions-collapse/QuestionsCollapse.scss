@@ -1,0 +1,106 @@
+.ant-collapse {
+  border: 0;
+  background: transparent;
+  .ant-collapse-item {
+    border: 0;
+    .ant-collapse-header {
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 10px;
+      transition: all 0.4s;
+      &:hover {
+        background-color: rgba(105, 144, 255, 0.15);
+      }
+      .ant-collapse-expand-icon {
+        display: none;
+      }
+      .header_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .question {
+          font-size: 18px;
+          display: flex;
+          align-items: flex-start;
+          .question_number {
+            color: #6990ff;
+            margin-right: 5px;
+          }
+        }
+        .icon {
+          width: 28px;
+          height: 28px;
+          background: #6990ff;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.4s ease;
+        }
+
+        .icon.rotate {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &:last-child {
+      .ant-collapse-header {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .ant-collapse-item-active {
+    border: 0;
+    .ant-collapse-header {
+      border-radius: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: #fff;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+    &:last-child {
+      .ant-collapse-header {
+        border-radius: 0;
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+      }
+    }
+  }
+
+  .ant-collapse-content {
+    .ant-collapse-content-box {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background: #fff;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .ant-collapse {
+    .ant-collapse-item {
+      .ant-collapse-header {
+        .header_content {
+          .question {
+            font-size: 16px;
+            line-height: 16px;
+          }
+          .icon {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+    .ant-collapse-content {
+      .ant-collapse-content-box {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

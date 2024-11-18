@@ -8,6 +8,7 @@ import StoreSection from "../../components/pages/home/store-section/StoreSection
 import PricingSection from "../../components/pages/home/pricing-section/PricingSection";
 import OurClientsSection from "../../components/pages/home/our-clients/OurClientsSection";
 import PartnersSection from "../../components/pages/home/partners-secton/PartnersSection";
+import QuestionsSection from "../../components/pages/home/questions-section/QuestionsSection";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <PricingSection />
       <OurClientsSection />
       <PartnersSection />
+      <QuestionsSection />
     </div>
   );
 };
