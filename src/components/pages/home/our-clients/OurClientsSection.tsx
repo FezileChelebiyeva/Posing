@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./OurClientSection.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import 'swiper/css/autoplay'; 
 import client_commnets from "../../../../fake-apis/client_comments";
 import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
 
@@ -40,11 +41,15 @@ const OurClientsSection = () => {
           </div>
           <div className={styles.our_clients_comments}>
             <Swiper
-              speed={1500}
+              speed={1200}
               slidesPerView={3}
-              spaceBetween={30}
+              spaceBetween={20}
               pagination={{
                 clickable: true,
+              }}
+              autoplay={{
+                delay: 5000, 
+                disableOnInteraction: false,
               }}
               breakpoints={{
                 1200: {
@@ -63,7 +68,7 @@ const OurClientsSection = () => {
                   slidesPerView: 1,
                 },
               }}
-              modules={[Pagination]}
+              modules={[Pagination, Autoplay]}
               className={styles.mySwiper}
             >
               {client_commnets.map((client: any, i: number) => {
