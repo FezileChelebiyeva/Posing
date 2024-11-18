@@ -61,11 +61,11 @@
   }
   @media (max-width: 1200px) {
     .store_section {
-        .section_head{
-            .section_title{
-                min-width: 80%;
-            }
+      .section_head {
+        .section_title {
+          min-width: 80%;
         }
+      }
       .store_contents {
         .store_image {
           width: 45%;
@@ -122,7 +122,11 @@
       }
     }
   }
+  @media (max-width: 993px) {
+    padding: 50px 0;
+  }
   @media (max-width: 576px) {
+    padding: 30px 0;
     .store_section {
       .section_head {
         .section_title {
