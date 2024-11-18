@@ -6,7 +6,7 @@ import Button from "../../../shared/Button/MainButton";
 
 const PricingSection = () => {
   return (
-    <div id={styles.pricing_section}>
+    <section id={styles.pricing_section}>
       <div className="container">
         <div className={styles.pricing_section}>
           <div className={styles.section_head}>
@@ -72,7 +72,7 @@ const PricingSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
