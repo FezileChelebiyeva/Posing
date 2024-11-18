@@ -1,13 +1,13 @@
 #footer {
   background: #1c2528;
   color: #d9d9d9;
-  padding: 60px 0;
+  padding: 80px 0;
   .footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
     .footer_info {
       width: 22%;
       .info_subtitle {
@@ -83,29 +83,31 @@
     }
   }
   @media (max-width: 993px) {
+    padding: 50px 0;
     .footer {
-        gap: 40px 25px;
+      gap: 40px 25px;
       .footer_info {
         width: 47%;
       }
-      .category{
+      .category {
         width: 48%;
       }
-      .subscribe_us{
+      .subscribe_us {
         width: 47%;
       }
     }
   }
   @media (max-width: 576px) {
+    padding: 30px 0;
     .footer {
-        row-gap: 50px;
+      row-gap: 50px;
       .footer_info {
         width: 100%;
       }
-      .category{
+      .category {
         width: 100%;
       }
-      .subscribe_us{
+      .subscribe_us {
         width: 100%;
       }
     }
