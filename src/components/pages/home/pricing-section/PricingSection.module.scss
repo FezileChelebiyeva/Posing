@@ -1,0 +1,203 @@
+#pricing_section {
+  background-image: url("../../../../assets/images/home/backgrounds/section_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0;
+  .pricing_section {
+    .section_head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .first_title {
+        text-align: center;
+        visibility: visible;
+        animation-duration: 1s;
+        animation-delay: 0.3s;
+        animation-name: fadeInUp;
+        color: #52c8c4;
+      }
+      .section_title {
+        text-align: center;
+        font-size: 42px;
+        margin-top: 20px;
+        color: #1c2528;
+        font-weight: 600;
+        line-height: 46px;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    .pricing_cards {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+      .pricing_card {
+        width: 31%;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px 0;
+        .pricing_kind {
+          display: flex;
+          align-items: center;
+          padding: 0 40px;
+          column-gap: 20px;
+          .kind_icon {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background: linear-gradient(
+              257.51deg,
+              #f2fcfe 34.07%,
+              #faf1fe 100%
+            );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .pricing_amount {
+          border-bottom: 1px dotted #e5e5e5;
+          padding: 30px 40px;
+          .amount_month {
+            display: flex;
+            align-items: flex-end;
+            .amount {
+              font-weight: 700;
+              font-size: 60px;
+              color: #6990ff;
+              font-family: "Poppins", sans-serif;
+            }
+            .month {
+              color: #6b6b6b;
+              font-size: 16px;
+              font-weight: 400;
+              margin-left: 10px;
+            }
+          }
+          .offer_free {
+            margin-top: 10px;
+            color: #52c8c4;
+            font-size: 14px;
+          }
+        }
+        .pricing_features {
+          padding: 0 40px;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          .features_lists {
+            .feture_row {
+              display: flex;
+              align-items: center;
+              column-gap: 20px;
+              .active_icon {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #47c4c0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .active_feature {
+                color: #1c2528;
+                font-size: 16px;
+                font-weight: 400;
+              }
+              .deactive_feature {
+                color: #b5b5b5;
+                font-size: 16px;
+                font-weight: 400;
+              }
+              .deactive_icon {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #b5b5b5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+        .buy_btn {
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          width: 150px;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .pricing_section {
+      .pricing_cards {
+        gap: 20px;
+        .pricing_card {
+          width: 31.5%;
+        }
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    .pricing_section {
+      .pricing_cards {
+        gap: 12px;
+        .pricing_card {
+          width: 32.2%;
+        }
+      }
+    }
+  }
+  @media (max-width: 993px) {
+    padding: 50px 0;
+    .pricing_section {
+      .pricing_cards {
+        gap: 30px;
+        .pricing_card {
+          width: 80%;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .pricing_section {
+      .pricing_cards {
+        gap: 30px;
+        .pricing_card {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .pricing_section {
+      .section_head {
+        .section_title {
+          font-size: 30px;
+          line-height: 32px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 35px, 0);
+    transform: translate3d(0, 35px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
