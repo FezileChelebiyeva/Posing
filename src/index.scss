@@ -98,9 +98,28 @@ a {
   cursor: pointer;
   color: #1c2528;
 }
-  
+
 p {
   color: #6b6b6b;
   font-size: 16px;
   line-height: 1.6em;
+}
+
+// swiper custom styles
+.swiper-pagination {
+  --swiper-pagination-bullet-horizontal-gap: 3px;
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #52c8c4 !important;
+  opacity: 1 !important;
+  transition: width 0.4s ease;
+}
+.swiper-pagination-bullet-active {
+  width: 30px !important;
+  height: 10px !important;
+  background-color: #52c8c4 !important;
+  border-radius: 10px !important;
+  transition: width 0.4s ease;
 }

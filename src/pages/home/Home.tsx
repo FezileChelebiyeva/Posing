@@ -6,6 +6,7 @@ import FactsCounterSection from "../../components/pages/home/facts-counter-secti
 import FeaturesSection from "../../components/pages/home/features-section/FeaturesSection";
 import StoreSection from "../../components/pages/home/store-section/StoreSection";
 import PricingSection from "../../components/pages/home/pricing-section/PricingSection";
+import OurClientsSection from "../../components/pages/home/our-clients/OurClientsSection";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <FeaturesSection />
       <StoreSection />
       <PricingSection />
+      <OurClientsSection />
     </div>
   );
 };
