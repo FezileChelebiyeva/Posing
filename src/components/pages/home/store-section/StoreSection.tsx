@@ -17,14 +17,14 @@ const StoreSection = () => {
             </h1>
           </div>
           <div className={styles.store_contents}>
-            <ScrollAnimationImg>
-              <div className={styles.store_image}>
+            <div className={styles.store_image}>
+              <ScrollAnimationImg>
                 <img src={retailStore} alt="store-image" />
-              </div>
-            </ScrollAnimationImg>
+              </ScrollAnimationImg>
+            </div>
             <div className={styles.store_names}>
-              <ScrollAnimationRight>
-                <div className={styles.store_names_wrapper}>
+              <div className={styles.store_names_wrapper}>
+                <ScrollAnimationRight>
                   {stores.map((store: any, idx: number) => {
                     return (
                       idx % 2 === 0 && (
@@ -37,10 +37,10 @@ const StoreSection = () => {
                       )
                     );
                   })}
-                </div>
-              </ScrollAnimationRight>
-              <ScrollAnimationRight>
-                <div className={styles.store_names_wrapper}>
+                </ScrollAnimationRight>
+              </div>
+              <div className={styles.store_names_wrapper}>
+                <ScrollAnimationRight>
                   {stores.map((store: any, idx: number) => {
                     return (
                       idx % 2 === 1 && (
@@ -53,8 +53,8 @@ const StoreSection = () => {
                       )
                     );
                   })}
-                </div>
-              </ScrollAnimationRight>
+                </ScrollAnimationRight>
+              </div>
             </div>
           </div>
         </div>

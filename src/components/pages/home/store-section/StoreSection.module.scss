@@ -19,10 +19,9 @@
     .store_contents {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       column-gap: 90px;
       .store_image {
-        width: 100%;
+        width: 52%;
         img {
           width: 100%;
         }
@@ -30,10 +29,10 @@
       .store_names {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        column-gap: 20px;
+        width: 49%;
+        column-gap: 18px;
         .store_names_wrapper {
-          width: 100%;
+          width: 48%;
           .store_card {
             background-color: #fff;
             border-radius: 10px;
@@ -59,11 +58,8 @@
         }
       }
       .store_contents {
-        .store_image {
-          width: 45%;
-        }
         .store_names {
-          width: 55%;
+          width: 52%;
           .store_names_wrapper {
             width: 45%;
             .store_card {
