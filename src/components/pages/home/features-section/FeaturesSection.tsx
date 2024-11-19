@@ -3,9 +3,9 @@ import styles from "./FeaturesSection.module.scss";
 import features_cards from "../../../../fake-apis/features";
 const FeaturesSection = () => {
   return (
-    <div className={styles.features_section_all}>
+    <section id="features" className={styles.features_section_all}>
       <div className="container">
-        <div id="features" className={styles.features_section}>
+        <div className={styles.features_section}>
           <div className={styles.section_head}>
             <p className={styles.first_title}>POS Features</p>
             <h1 className={styles.section_title}>Available features</h1>
@@ -31,7 +31,7 @@ const FeaturesSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
