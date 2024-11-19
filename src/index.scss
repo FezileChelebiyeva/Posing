@@ -85,12 +85,13 @@ body {
 }
 input,
 button,
-textarea {
+textarea,
+label {
   font-family: "Inter", sans-serif;
   font-size: inherit;
 }
 button {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   font-size: inherit;
   cursor: pointer;
   background-color: inherit;
@@ -104,6 +105,7 @@ p {
   color: #6b6b6b;
   font-size: 16px;
   line-height: 1.6em;
+  font-family: "Inter", sans-serif;
 }
 h1,
 h2,
