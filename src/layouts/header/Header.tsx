@@ -6,20 +6,19 @@ import { navigation } from "../../constants/navigation.constant";
 import Button from "../../components/shared/Button/MainButton";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Modal } from "antd";
-import LoginModal from "../../components/pages/header/login-modal/LoginModal";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../redux/store";
 import {
   setForgetPassword,
   setLoginRegister,
 } from "../../redux/slice/auth.slice";
+import LoginModal from "../../components/layouts/header/login-modal/LoginModal";
 
 const Header = () => {
   const [menuBar, setMenuBar] = useState(false);
   const [isLoginModalVisible, setIsLoginModalVisible] = useState(false);
 
   const dispatch = useDispatch();
-  // const { forgetPassword, loginRegister } = useSelector((state: RootState) => state.auth);
 
   // show-cancel login modal
   const showLoginModal = () => {
