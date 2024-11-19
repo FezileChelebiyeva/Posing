@@ -3,7 +3,7 @@ import styles from "./ScrollAnimationRight.module.scss";
 
 interface ScrollAnimationProps {
   children: React.ReactNode;
-  className?: string; // İstifadəçinin xüsusi stil əlavə etməsi üçün
+  className?: string;
 }
 
 const ScrollAnimationRight: React.FC<ScrollAnimationProps> = ({

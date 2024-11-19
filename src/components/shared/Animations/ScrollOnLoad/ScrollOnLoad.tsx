@@ -3,7 +3,7 @@ import styles from "./ScrollOnLoad.module.scss";
 
 interface ScrollOnLoadProps {
   children: React.ReactNode;
-  className?: string; // İstifadəçinin əlavə xüsusi stili üçün
+  className?: string;
 }
 
 const ScrollOnLoad: React.FC<ScrollOnLoadProps> = ({
@@ -13,10 +13,9 @@ const ScrollOnLoad: React.FC<ScrollOnLoadProps> = ({
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Komponent render olduqda animasiyanı tetiklə
     const timeout = setTimeout(() => {
       setIsVisible(true);
-    }, 100); // 100ms sonra görünən vəziyyətə keçsin
+    }, 300);
 
     return () => clearTimeout(timeout);
   }, []);
