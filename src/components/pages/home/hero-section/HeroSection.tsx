@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./HeroSection.module.scss";
 import Button from "../../../shared/Button/MainButton";
 import heroImage from "../../../../assets/images/home/hero-section/hero_img.png";

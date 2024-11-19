@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./QuestionsSection.module.scss";
 import faqImg from "../../../../assets/images/home/questions-section/faq_img.png";
 import QuestionsCollapse from "./questions-collapse/QuestionsCollapse";

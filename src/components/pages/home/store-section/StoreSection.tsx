@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./StoreSection.module.scss";
 import retailStore from "../../../../assets/images/home/store-section/retail-store.png";
 import stores from "../../../../fake-apis/stores";

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./FeaturesSection.module.scss";
 import features_cards from "../../../../fake-apis/features";
 import ScrollAnimation from "../../../shared/Animations/ScrollAnimation/ScrollAnimation";

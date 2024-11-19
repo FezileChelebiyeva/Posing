@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./PricingSection.module.scss";
 import pricing from "../../../../fake-apis/pricing";
 import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";

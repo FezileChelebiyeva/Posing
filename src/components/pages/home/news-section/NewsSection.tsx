@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./NewsSection.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";

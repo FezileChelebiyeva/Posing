@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import questions from "../../../../../fake-apis/questions";
 import { Collapse } from "antd";
 import { AiOutlineDown } from "react-icons/ai";

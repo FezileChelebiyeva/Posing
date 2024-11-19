@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./AboutSection.module.scss";
 import aboutImg from "../../../../assets/images/home/about-section/about_img_1.png";
 import infoImg from "../../../../assets/images/home/about-section/about_img_2.png";

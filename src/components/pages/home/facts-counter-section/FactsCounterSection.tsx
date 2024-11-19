@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./FactsCounterSection.module.scss";
 import facts from "../../../../fake-apis/facts";
 import SlotCounter from "react-slot-counter";
@@ -29,7 +28,6 @@ const FactsCounterSection = () => {
                             ? String(element.number + "+")
                             : element.number
                         }
-                        
                       />
                     </h1>
                     <p className={styles.fact_title}> {element.title}</p>

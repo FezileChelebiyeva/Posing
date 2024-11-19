@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ContactUsSection.module.scss";
 import Button from "../../../shared/Button/MainButton";
 import contact_icon1 from "../../../../assets/images/home/contact-us-section/icons/contact_icon_1.svg";
