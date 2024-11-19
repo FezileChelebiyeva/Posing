@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./FeaturesSection.module.scss";
 import features_cards from "../../../../fake-apis/features";
+import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
 const FeaturesSection = () => {
   return (
     <section id="features" className={styles.features_section_all}>
       <div className="container">
         <div className={styles.features_section}>
           <div className={styles.section_head}>
-            <p className={styles.first_title}>POS Features</p>
+            <ScrollAnimation>POS Features</ScrollAnimation>
             <h1 className={styles.section_title}>Available features</h1>
           </div>
           <div className={styles.features_cards_container}>

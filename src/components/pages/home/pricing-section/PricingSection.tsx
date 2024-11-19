@@ -3,6 +3,7 @@ import styles from "./PricingSection.module.scss";
 import pricing from "../../../../fake-apis/pricing";
 import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
 import Button from "../../../shared/Button/MainButton";
+import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
 
 const PricingSection = () => {
   return (
@@ -10,7 +11,7 @@ const PricingSection = () => {
       <div className="container">
         <div className={styles.pricing_section}>
           <div className={styles.section_head}>
-            <p className={styles.first_title}>Pricing Plan</p>
+            <ScrollAnimation>Pricing Plan</ScrollAnimation>
             <h1 className={styles.section_title}>The best choice for you</h1>
           </div>
           <div className={styles.pricing_cards}>

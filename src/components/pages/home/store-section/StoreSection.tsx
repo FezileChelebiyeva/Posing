@@ -2,13 +2,14 @@ import React from "react";
 import styles from "./StoreSection.module.scss";
 import retailStore from "../../../../assets/images/home/store-section/retail-store.png";
 import stores from "../../../../fake-apis/stores";
+import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
 const StoreSection = () => {
   return (
     <section id={styles.store_section}>
       <div className="container">
         <div className={styles.store_section}>
           <div className={styles.section_head}>
-            <p className={styles.first_title}>Retail Stores</p>
+            <ScrollAnimation>Retail Stores</ScrollAnimation>
             <h1 className={styles.section_title}>
               Perfect point of sale software for most retail stores
             </h1>

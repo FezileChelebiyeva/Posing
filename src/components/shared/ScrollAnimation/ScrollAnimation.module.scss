@@ -1,0 +1,31 @@
+.scrollAnimation {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease-out;
+
+  &.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .firstTitle {
+    text-align: center;
+    color: #52c8c4;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(35px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}

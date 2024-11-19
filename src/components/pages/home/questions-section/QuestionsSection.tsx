@@ -2,14 +2,15 @@ import React from "react";
 import styles from "./QuestionsSection.module.scss";
 import faqImg from "../../../../assets/images/home/questions-section/faq_img.png";
 import QuestionsCollapse from "./questions-collapse/QuestionsCollapse";
+import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
 
 const QuestionsSection = () => {
   return (
-    <section id="faq"  className={styles.questions_section_all}>
+    <section id="faq" className={styles.questions_section_all}>
       <div className="container">
         <div className={styles.questions_section}>
           <div className={styles.section_head}>
-            <p className={styles.first_title}>POS FAQ</p>
+            <ScrollAnimation>POS FAQ</ScrollAnimation>
             <h1 className={styles.section_title}>Frequently asked questions</h1>
           </div>
 
@@ -18,7 +19,7 @@ const QuestionsSection = () => {
               <img src={faqImg} alt="questions" />
             </div>
             <div className={styles.questions_accordion}>
-            <QuestionsCollapse/>
+              <QuestionsCollapse />
             </div>
           </div>
         </div>

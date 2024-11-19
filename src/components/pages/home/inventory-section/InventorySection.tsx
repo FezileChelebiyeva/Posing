@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./InventorySection.module.scss";
 import inventory_cards from "../../../../fake-apis/inventoryCards";
+import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
 
 const InventorySection = () => {
   return (
@@ -8,7 +9,7 @@ const InventorySection = () => {
       <div className="container">
         <div className={styles.inventory_section}>
           <div className={styles.section_head}>
-            <p className={styles.first_title}>Office & Inventory</p>
+            <ScrollAnimation>Office & Inventory</ScrollAnimation>
             <h1 className={styles.section_title}>Our best inventory</h1>
           </div>
           <div className={styles.inventory_cards_container}>

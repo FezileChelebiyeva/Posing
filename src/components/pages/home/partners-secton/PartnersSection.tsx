@@ -3,8 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import 'swiper/css/autoplay'; 
+import "swiper/css/autoplay";
 import partners from "../../../../fake-apis/partners";
+import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
 
 const PartnersSection = () => {
   return (
@@ -12,7 +13,7 @@ const PartnersSection = () => {
       <div className="container">
         <div className={styles.partners_section}>
           <div className={styles.section_head}>
-            <p className={styles.first_title}>Our Client</p>
+            <ScrollAnimation>Our Client</ScrollAnimation>
             <h1 className={styles.section_title}>Who we partner with</h1>
           </div>
           <div className={styles.partners_slider}>
@@ -24,7 +25,7 @@ const PartnersSection = () => {
                 clickable: true,
               }}
               autoplay={{
-                delay: 5000, 
+                delay: 5000,
                 disableOnInteraction: false,
               }}
               breakpoints={{
@@ -51,9 +52,9 @@ const PartnersSection = () => {
                 return (
                   <SwiperSlide key={i}>
                     <div className={styles.partner_card}>
-                        <div>
-                          <img src={partner.image} alt="partner-image" />
-                        </div>
+                      <div>
+                        <img src={partner.image} alt="partner-image" />
+                      </div>
                     </div>
                   </SwiperSlide>
                 );

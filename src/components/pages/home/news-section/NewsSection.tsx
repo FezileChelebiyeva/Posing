@@ -11,6 +11,7 @@ import {
   AiOutlineCalendar,
   AiOutlineArrowRight,
 } from "react-icons/ai";
+import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
 
 const NewsSection = () => {
   return (
@@ -18,7 +19,7 @@ const NewsSection = () => {
       <div className="container">
         <div className={styles.latest_news_section}>
           <div className={styles.section_head}>
-            <p className={styles.first_title}>Letest News</p>
+            <ScrollAnimation>Letest News</ScrollAnimation>
             <h1 className={styles.section_title}>Point of sale latest news</h1>
           </div>
           <div className={styles.news_slider}>

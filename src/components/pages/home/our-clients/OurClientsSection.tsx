@@ -4,9 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import 'swiper/css/autoplay'; 
+import "swiper/css/autoplay";
 import client_commnets from "../../../../fake-apis/client_comments";
 import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
+import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
 
 const OurClientsSection = () => {
   const renderStars = (rate: number) => {
@@ -36,7 +37,7 @@ const OurClientsSection = () => {
       <div className="container">
         <div className={styles.our_clients_section}>
           <div className={styles.section_head}>
-            <p className={styles.first_title}>Testimonials</p>
+            <ScrollAnimation>Testimonials</ScrollAnimation>
             <h1 className={styles.section_title}>What our client’s say</h1>
           </div>
           <div className={styles.our_clients_comments}>
@@ -48,7 +49,7 @@ const OurClientsSection = () => {
                 clickable: true,
               }}
               autoplay={{
-                delay: 5000, 
+                delay: 5000,
                 disableOnInteraction: false,
               }}
               breakpoints={{
