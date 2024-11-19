@@ -1,7 +1,7 @@
 .scrollAnimation {
   opacity: 0;
   transform: translateY(80px);
-  transition: all 0.8s ease-out;
+  transition: all 1s ease-out;
 
   &.animated {
     opacity: 1;
