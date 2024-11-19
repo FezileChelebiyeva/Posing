@@ -44,7 +44,7 @@ const NewsSection = () => {
                   slidesPerView: 2,
                 },
                 576: {
-                  slidesPerView: 1.5,
+                  slidesPerView: 2,
                 },
                 0: {
                   slidesPerView: 1,

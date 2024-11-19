@@ -108,7 +108,18 @@
       .news_slider {
         .news_card {
           .news_image {
-            height: 300px;
+            height: 260px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .latest_news_section {
+      .news_slider {
+        .news_card {
+          .news_image {
+            height: auto;
           }
         }
       }
@@ -122,6 +133,14 @@
           font-size: 30px;
           line-height: 32px;
           margin-top: 10px;
+        }
+      }
+      .news_slider {
+        .news_card {
+          margin-bottom: 40px;
+          .news_image {
+            height: auto;
+          }
         }
       }
     }
