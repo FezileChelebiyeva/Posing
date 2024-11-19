@@ -134,3 +134,7 @@ h5 {
   border-radius: 10px !important;
   transition: width 0.4s ease;
 }
+
+.ant-modal-wrap{
+  overflow: scroll;
+}
