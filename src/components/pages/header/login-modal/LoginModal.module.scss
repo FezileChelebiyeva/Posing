@@ -36,23 +36,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .agree_terms {
-          .agree_checkbox {
-            display: flex;
-            align-items: center;
-            column-gap: 5px;
-            input {
-              width: 18px;
-              height: 18px;
-              cursor: pointer;
-            }
-            label {
-              color: #202223;
-              font-size: 16px;
-              cursor: pointer;
-            }
-          }
-        }
         .remember_checkbox {
           display: flex;
           align-items: center;
@@ -86,11 +69,29 @@
           }
         }
       }
+      .agree_terms {
+        .agree_checkbox {
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+          input {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+          }
+          label {
+            color: #202223;
+            font-size: 16px;
+            cursor: pointer;
+          }
+        }
+      }
       .register {
         span {
           color: #6990ff;
           cursor: pointer;
           position: relative;
+          margin-left: 2px;
           &::before {
             content: "";
             position: absolute;

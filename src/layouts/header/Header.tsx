@@ -7,26 +7,27 @@ import Button from "../../components/shared/Button/MainButton";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Modal } from "antd";
 import LoginModal from "../../components/pages/header/login-modal/LoginModal";
-import RegisterModal from "../../components/pages/header/register-modal/RegisterModal";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../../redux/store";
+import {
+  setForgetPassword,
+  setLoginRegister,
+} from "../../redux/slice/auth.slice";
 
 const Header = () => {
   const [menuBar, setMenuBar] = useState(false);
   const [isLoginModalVisible, setIsLoginModalVisible] = useState(false);
-  const [isRegisterModalVisible, setIsRegisterModalVisible] = useState(false);
+
+  const dispatch = useDispatch();
+  // const { forgetPassword, loginRegister } = useSelector((state: RootState) => state.auth);
 
   // show-cancel login modal
   const showLoginModal = () => {
     setIsLoginModalVisible(true);
   };
 
-  // show-cancel register modal
-  const showRegisterModal = () => {
-    setIsRegisterModalVisible(true);
-  };
-
   const handleCancel = () => {
     setIsLoginModalVisible(false);
-    setIsRegisterModalVisible(false);
   };
 
   return (
@@ -61,13 +62,24 @@ const Header = () => {
           </div>
           <div className={styles.header_end}>
             <div className={styles.login_start}>
-              <div onClick={() => showLoginModal()} className={styles.login}>
+              <div
+                onClick={() => {
+                  showLoginModal();
+                  dispatch(setLoginRegister(false));
+                  dispatch(setForgetPassword(false));
+                }}
+                className={styles.login}
+              >
                 Login
               </div>
               <Button
                 className={styles.contact_btn}
                 text="Start For Free"
-                onClick={() => showRegisterModal()}
+                onClick={() => {
+                  showLoginModal();
+                  dispatch(setLoginRegister(true));
+                  dispatch(setForgetPassword(false));
+                }}
               ></Button>
             </div>
             <div
@@ -94,16 +106,6 @@ const Header = () => {
         centered
       >
         <LoginModal />
-      </Modal>
-      <Modal
-        open={isRegisterModalVisible}
-        onCancel={handleCancel}
-        footer={null}
-        width={"90%"}
-        style={{ minWidth: "320px" }}
-        centered
-      >
-        <RegisterModal />
       </Modal>
     </header>
   );

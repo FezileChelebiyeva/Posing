@@ -1,3 +1,5 @@
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.scss";
 import ROUTES from "./routes";
@@ -16,7 +18,7 @@ const router = createBrowserRouter(ROUTES, {
 });
 
 function App() {
-  const [isLoading, setIsLoading] = useState<any>(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -28,7 +30,13 @@ function App() {
 
   return (
     <div className="App">
-      {isLoading ? <Spinner /> : <RouterProvider router={router} />}
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <Provider store={store}>
+          <RouterProvider router={router} />
+        </Provider>
+      )}
     </div>
   );
 }
