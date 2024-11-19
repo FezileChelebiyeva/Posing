@@ -1,26 +1,26 @@
 const sections = [
   {
-    category: "Available POS",
+    category: "Posing",
     items: [
       {
-        name: "Food Delivery",
-        path: "delivery",
+        name: "About",
+        path: "/about",
       },
       {
-        name: "Furniture Store",
-        path: "furniture-store",
+        name: "Feature",
+        path: "feature",
       },
       {
-        name: "Coffee Shop",
-        path: "coffee-shop",
+        name: "Pricing",
+        path: "pricing",
       },
       {
-        name: "Clothing Store",
-        path: "clothing-store",
+        name: "News",
+        path: "news",
       },
       {
-        name: "eCommerce",
-        path: "ecommerce",
+        name: "Contact",
+        path: "contact",
       },
     ],
   },

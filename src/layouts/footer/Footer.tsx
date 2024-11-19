@@ -10,81 +10,92 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer id={styles.footer}>
-      <div className="container">
-        <div className={styles.footer}>
-          <div className={styles.footer_info}>
-            <img src={logo_light} alt="footer-logo" />
-            <p className={styles.info_subtitle}>
-              On the other hand, we denounce with righteous indignation and
-              dislike men who are so
-            </p>
-            <div className={styles.footer_icons}>
-              <a className={styles.social_media_icon}>
-                <img src={facebook} alt="facebook" />
-              </a>
-              <a className={styles.social_media_icon}>
-                <img src={twitter} alt="twitter" />
-              </a>
-              <a className={styles.social_media_icon}>
-                <img src={instagram} alt="instagram" />
-              </a>
+      <div className={styles.footer_top}>
+        <div className="container">
+          <div className={styles.footer}>
+            <div className={styles.footer_info}>
+              <Link to={"/"}>
+                <img src={logo_light} alt="footer-logo" />
+              </Link>
+              <p className={styles.info_subtitle}>
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so
+              </p>
+              <div className={styles.footer_icons}>
+                <a className={styles.social_media_icon}>
+                  <img src={facebook} alt="facebook" />
+                </a>
+                <a className={styles.social_media_icon}>
+                  <img src={twitter} alt="twitter" />
+                </a>
+                <a className={styles.social_media_icon}>
+                  <img src={instagram} alt="instagram" />
+                </a>
+              </div>
+            </div>
+            <div className={styles.category}>
+              <h2 className={styles.category_title}>Posing</h2>
+              <ul className={styles.navlinks_lists}>
+                {sections
+                  .find((section) => section.category === "Posing")
+                  ?.items.map((item, idx) => (
+                    <li key={idx} className={styles.nav_item}>
+                      <Link className={styles.footer_link} to={item.path}>
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+
+            <div className={styles.category}>
+              <h2 className={styles.category_title}>Company</h2>
+              <ul className={styles.navlinks_lists}>
+                {sections
+                  .find((section) => section.category === "Company")
+                  ?.items.map((item, idx) => (
+                    <li key={idx} className={styles.nav_item}>
+                      <Link className={styles.footer_link} to={item.path}>
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+
+            <div className={styles.subscribe_us}>
+              <h2 className={styles.subscribe_title}>Subscribe us</h2>
+              <p className={styles.subcribe_subtitle}>
+                Get Business news, tip and solutions to your problems from our
+                experts.
+              </p>
+              <form className={styles.contact_form}>
+                <div className={styles.contact_email}>
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Enter your email
+"
+                    required
+                  />
+                </div>
+                <div>
+                  <Button
+                    type="submit"
+                    text="Subscribe"
+                    className={styles.contact_btn}
+                  ></Button>
+                </div>
+              </form>
             </div>
           </div>
-          <div className={styles.category}>
-            <h2 className={styles.category_title}>Available POS</h2>
-            <ul className={styles.navlinks_lists}>
-              {sections
-                .find((section) => section.category === "Available POS")
-                ?.items.map((item, idx) => (
-                  <li key={idx} className={styles.nav_item}>
-                    <Link className={styles.footer_link} to={item.path}>
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-            </ul>
-          </div>
-
-          <div className={styles.category}>
-            <h2 className={styles.category_title}>Company</h2>
-            <ul className={styles.navlinks_lists}>
-              {sections
-                .find((section) => section.category === "Company")
-                ?.items.map((item, idx) => (
-                  <li key={idx} className={styles.nav_item}>
-                    <Link className={styles.footer_link} to={item.path}>
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-            </ul>
-          </div>
-
-          <div className={styles.subscribe_us}>
-            <h2 className={styles.subscribe_title}>Subscribe us</h2>
-            <p className={styles.subcribe_subtitle}>
-              Get Business news, tip and solutions to your problems from our
-              experts.
-            </p>
-            <form className={styles.contact_form}>
-              <div className={styles.contact_email}>
-                <input
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="Enter your email
-"
-                  required
-                />
-              </div>
-              <div>
-                <Button
-                  type="submit"
-                  text="Subscribe"
-                  className={styles.contact_btn}
-                ></Button>
-              </div>
-            </form>
+        </div>
+      </div>
+      <div className={styles.footer_bottom}>
+        <div className="container">
+          <div className={styles.footer_bottom_text}>
+            Copyright 2022. Created by Thememarch.
           </div>
         </div>
       </div>
