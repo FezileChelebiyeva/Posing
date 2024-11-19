@@ -14,7 +14,7 @@ import {
 
 const NewsSection = () => {
   return (
-    <section id="latest_news" className={styles.latest_news_section}>
+    <section id="latest_news" className={styles.latest_news_section_all}>
       <div className="container">
         <div className={styles.latest_news_section}>
           <div className={styles.section_head}>

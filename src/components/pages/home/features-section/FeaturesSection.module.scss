@@ -1,10 +1,10 @@
-.features_section {
+.features_section_all {
   background-image: url("../../../../assets/images/home/backgrounds/section_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 80px;
-  padding-top: 140px;
+  padding-top: 240px;
   .features_section {
     .section_head {
       .first_title {
@@ -92,7 +92,7 @@
     }
   }
   @media (max-width: 1100px) {
-    padding-top: 110px;
+    padding-top: 200px;
     .features_section {
       .features_cards_container {
         gap: 15px;
@@ -101,7 +101,7 @@
   }
   @media (max-width: 1024px) {
     padding-bottom: 50px;
-    padding-top: 90px;
+    padding-top: 160px;
     .features_section {
       .features_cards_container {
         gap: 15px;
@@ -112,7 +112,6 @@
     }
   }
   @media (max-width: 768px) {
-    padding-top: 80px;
     .features_section {
       .features_cards_container {
         gap: 15px;
