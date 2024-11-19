@@ -6,7 +6,7 @@ import contact_icon2 from "../../../../assets/images/home/contact-us-section/ico
 import contact_icon3 from "../../../../assets/images/home/contact-us-section/icons/contact_icon_3.svg";
 const ContactUsSection = () => {
   return (
-    <section id={styles.contact_us_section}>
+    <section id="contact_us" className={styles.contact_us_section}>
       <div className="container">
         <div className={styles.contact_us_section}>
           <div className={styles.contact_details}>

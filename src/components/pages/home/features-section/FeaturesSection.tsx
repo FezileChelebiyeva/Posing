@@ -3,9 +3,9 @@ import styles from "./FeaturesSection.module.scss";
 import features_cards from "../../../../fake-apis/features";
 const FeaturesSection = () => {
   return (
-    <div id={styles.features_section}>
+    <div className={styles.features_section}>
       <div className="container">
-        <div className={styles.features_section}>
+        <div id="features" className={styles.features_section}>
           <div className={styles.section_head}>
             <p className={styles.first_title}>POS Features</p>
             <h1 className={styles.section_title}>Available features</h1>

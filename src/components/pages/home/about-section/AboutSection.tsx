@@ -5,7 +5,7 @@ import infoImg from "../../../../assets/images/home/about-section/about_img_2.pn
 import iconTick from "../../../../assets/images/home/about-section/icons/tick.svg";
 const AboutSection = () => {
   return (
-    <section id={styles.about_section}>
+    <section id="about" className={styles.about_section}>
       <div className="container">
         <div className={styles.about_section}>
           <div className={styles.about_image}>

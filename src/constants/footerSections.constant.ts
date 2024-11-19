@@ -4,23 +4,23 @@ const sections = [
     items: [
       {
         name: "About",
-        path: "/about",
+        path: "#about",
       },
       {
         name: "Feature",
-        path: "feature",
+        path: "#features",
       },
       {
         name: "Pricing",
-        path: "pricing",
+        path: "#pricing",
       },
       {
         name: "News",
-        path: "news",
+        path: "#latest_news",
       },
       {
         name: "Contact",
-        path: "contact",
+        path: "#contact_us",
       },
     ],
   },
@@ -29,11 +29,11 @@ const sections = [
     items: [
       {
         name: "Features",
-        path: "features",
+        path: "#features",
       },
       {
         name: "FAQ",
-        path: "faq",
+        path: "#faq",
       },
       {
         name: "Privacy Policy",

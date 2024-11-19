@@ -5,7 +5,7 @@ import QuestionsCollapse from "./questions-collapse/QuestionsCollapse";
 
 const QuestionsSection = () => {
   return (
-    <section id={styles.questions_section}>
+    <section id="faq"  className={styles.questions_section}>
       <div className="container">
         <div className={styles.questions_section}>
           <div className={styles.section_head}>

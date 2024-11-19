@@ -7,7 +7,7 @@ import Button from "../../components/shared/Button/MainButton";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
-  const [menuBar, setMenuBar] = useState(false); // Default olaraq bağlı
+  const [menuBar, setMenuBar] = useState(false);
 
   return (
     <header id={styles.header}>
@@ -27,9 +27,9 @@ const Header = () => {
               <ul className={styles.navlink_lists}>
                 {navigation.map((nav, i) => (
                   <li key={i} className={styles.nav_list}>
-                    <Link className={styles.link} to={nav.path}>
+                    <a className={styles.link} href={nav.path}>
                       {nav.name}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>

@@ -5,23 +5,23 @@ export const navigation = [
     },
     {
       name: "About",
-      path: "/about",
+      path: "#about",
     },
     {
       name: "Feature",
-      path: "/feature",
+      path: "#features",
     },
     {
       name: "Pricing",
-      path: "/pricing",
+      path: "#pricing",
     },
     {
       name: "News",
-      path: "/news",
+      path: "#latest_news",
     },
     {
       name: "Contact",
-      path: "/contact",
+      path: "#contact_us",
     }
   ];
   

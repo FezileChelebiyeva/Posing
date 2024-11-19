@@ -6,7 +6,7 @@ import Button from "../../../shared/Button/MainButton";
 
 const PricingSection = () => {
   return (
-    <section id={styles.pricing_section}>
+    <section id="pricing" className={styles.pricing_section}>
       <div className="container">
         <div className={styles.pricing_section}>
           <div className={styles.section_head}>

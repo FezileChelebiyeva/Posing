@@ -40,9 +40,9 @@ const Footer = () => {
                   .find((section) => section.category === "Posing")
                   ?.items.map((item, idx) => (
                     <li key={idx} className={styles.nav_item}>
-                      <Link className={styles.footer_link} to={item.path}>
+                      <a className={styles.footer_link} href={item.path}>
                         {item.name}
-                      </Link>
+                      </a>
                     </li>
                   ))}
               </ul>
@@ -55,9 +55,9 @@ const Footer = () => {
                   .find((section) => section.category === "Company")
                   ?.items.map((item, idx) => (
                     <li key={idx} className={styles.nav_item}>
-                      <Link className={styles.footer_link} to={item.path}>
+                      <a className={styles.footer_link} href={item.path}>
                         {item.name}
-                      </Link>
+                      </a>
                     </li>
                   ))}
               </ul>
