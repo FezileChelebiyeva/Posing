@@ -126,23 +126,42 @@
     }
     .hero_shapes {
       .shape_1 {
-        top: 45%;
+        top: 38%;
       }
       .shape_2 {
-        left: 15%;
+        left: 12%;
       }
       .shape_3 {
-        left: 65%;
-        top: 15%;
+        left: 77%;
+        top: 12%;
       }
       .shape_4 {
-        left: 20%;
+        left: 16%;
       }
       .shape_5 {
         top: 50%;
       }
       .shape_6 {
-        left: 70%;
+        left: 78%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .hero_shapes {
+      .shape_1 {
+        top: 42%;
+      }
+      .shape_2 {
+        left: 4%;
+        top: 86%;
+      }
+      .shape_3 {
+        left: 84%;
+        top: 9%;
+      }
+      .shape_4 {
+        left: 5%;
+        top: 60%;
       }
     }
   }
@@ -169,23 +188,29 @@
     .hero_shapes {
       .shape_1{
         top: 33%;
-        left: 40%;
+        left: 54%;
       }
       .shape_2 {
-        left: 5%;
-        top: 85%;
+        left: 3%;
+        top: 87%;
+        img{
+          width: 40px;
+        }
       }
       .shape_3 {
-        left: 65%;
-        top: 10%;
+        left: 85%;
+        top: 20%;
       }
       .shape_4 {
-        top: 40%;
-        left: 1%;
+        top: 36%;
+        left: 0%;
       }
       .shape_6 {
-        top: 79%;
-        left: 76%;
+        top: 83%;
+        left: 80%;
+        img{
+          width: 50px;
+        }
       }
     }
   }
