@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./PartnersSection.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -42,7 +41,7 @@ const PartnersSection = () => {
                   slidesPerView: 2,
                 },
                 0: {
-                  slidesPerView: 1.4,
+                  slidesPerView: 1,
                 },
               }}
               modules={[Pagination, Autoplay]}
@@ -52,7 +51,7 @@ const PartnersSection = () => {
                 return (
                   <SwiperSlide key={i}>
                     <div className={styles.partner_card}>
-                        <div className={styles.partner_image}>
+                        <div>
                           <img src={partner.image} alt="partner-image" />
                         </div>
                     </div>
