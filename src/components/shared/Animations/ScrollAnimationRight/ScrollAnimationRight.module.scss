@@ -1,0 +1,11 @@
+.scrollAnimation {
+    opacity: 0;
+    transform: translateX(30%);
+    transition: all 1.5s ease-out;
+  
+    &.animated {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

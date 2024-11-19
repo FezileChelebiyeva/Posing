@@ -3,7 +3,7 @@ import styles from "./PricingSection.module.scss";
 import pricing from "../../../../fake-apis/pricing";
 import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
 import Button from "../../../shared/Button/MainButton";
-import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from "../../../shared/Animations/ScrollAnimation/ScrollAnimation";
 
 const PricingSection = () => {
   return (

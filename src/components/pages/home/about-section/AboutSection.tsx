@@ -3,13 +3,17 @@ import styles from "./AboutSection.module.scss";
 import aboutImg from "../../../../assets/images/home/about-section/about_img_1.png";
 import infoImg from "../../../../assets/images/home/about-section/about_img_2.png";
 import iconTick from "../../../../assets/images/home/about-section/icons/tick.svg";
+import ScrollAnimationImg from "../../../shared/Animations/ScrollAnimationImg/ScrollAnimationImg";
+import ScrollAnimation from "../../../shared/Animations/ScrollAnimation/ScrollAnimation";
 const AboutSection = () => {
   return (
     <section id="about" className={styles.about_section_all}>
       <div className="container">
         <div className={styles.about_section}>
           <div className={styles.about_image}>
-            <img src={aboutImg} alt="about-image" />
+            <ScrollAnimationImg>
+              <img src={aboutImg} alt="About Image" />
+            </ScrollAnimationImg>
           </div>
           <div className={styles.about_details}>
             <p className={styles.first_title}>About The POS</p>
@@ -58,7 +62,9 @@ const AboutSection = () => {
                 </div>
               </div>
               <div className={styles.right_section}>
-                <img src={infoImg} alt="information" />
+                <ScrollAnimation>
+                  <img src={infoImg} alt="information" />
+                </ScrollAnimation>
               </div>
             </div>
           </div>

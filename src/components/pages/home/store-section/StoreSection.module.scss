@@ -19,9 +19,10 @@
     .store_contents {
       display: flex;
       align-items: center;
-      column-gap: 80px;
+      justify-content: space-between;
+      column-gap: 90px;
       .store_image {
-        width: 50%;
+        width: 100%;
         img {
           width: 100%;
         }
@@ -29,10 +30,10 @@
       .store_names {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
+        width: 100%;
         column-gap: 20px;
         .store_names_wrapper {
-          width: 48%;
+          width: 100%;
           .store_card {
             background-color: #fff;
             border-radius: 10px;

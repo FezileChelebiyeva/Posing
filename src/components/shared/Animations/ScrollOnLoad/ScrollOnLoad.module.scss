@@ -1,0 +1,11 @@
+.scrollOnLoad {
+    opacity: 0;
+    transform: translateX(30%); // Sağdan başlayır
+    transition: all 1s ease-out; // 0.8 saniyəlik animasiya
+  
+    &.animated {
+      opacity: 1;
+      transform: translateX(0); // Orijinal mövqeyə gəlir
+    }
+  }
+  

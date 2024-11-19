@@ -11,7 +11,7 @@ import {
   AiOutlineCalendar,
   AiOutlineArrowRight,
 } from "react-icons/ai";
-import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from "../../../shared/Animations/ScrollAnimation/ScrollAnimation";
 
 const NewsSection = () => {
   return (

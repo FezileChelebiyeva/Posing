@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./InventorySection.module.scss";
 import inventory_cards from "../../../../fake-apis/inventoryCards";
-import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from "../../../shared/Animations/ScrollAnimation/ScrollAnimation";
 
 const InventorySection = () => {
   return (

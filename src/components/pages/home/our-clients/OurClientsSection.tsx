@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import client_commnets from "../../../../fake-apis/client_comments";
 import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
-import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from "../../../shared/Animations/ScrollAnimation/ScrollAnimation";
 
 const OurClientsSection = () => {
   const renderStars = (rate: number) => {

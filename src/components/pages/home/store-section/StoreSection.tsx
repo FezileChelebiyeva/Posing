@@ -2,7 +2,9 @@ import React from "react";
 import styles from "./StoreSection.module.scss";
 import retailStore from "../../../../assets/images/home/store-section/retail-store.png";
 import stores from "../../../../fake-apis/stores";
-import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from "../../../shared/Animations/ScrollAnimation/ScrollAnimation";
+import ScrollAnimationImg from "../../../shared/Animations/ScrollAnimationImg/ScrollAnimationImg";
+import ScrollAnimationRight from "../../../shared/Animations/ScrollAnimationRight/ScrollAnimationRight";
 const StoreSection = () => {
   return (
     <section id={styles.store_section}>
@@ -15,38 +17,44 @@ const StoreSection = () => {
             </h1>
           </div>
           <div className={styles.store_contents}>
-            <div className={styles.store_image}>
-              <img src={retailStore} alt="store-image" />
-            </div>
+            <ScrollAnimationImg>
+              <div className={styles.store_image}>
+                <img src={retailStore} alt="store-image" />
+              </div>
+            </ScrollAnimationImg>
             <div className={styles.store_names}>
-              <div className={styles.store_names_wrapper}>
-                {stores.map((store: any, idx: number) => {
-                  return (
-                    idx % 2 === 0 && (
-                      <div key={idx} className={styles.store_card}>
-                        <div className={styles.icon_image}>
-                          <img src={store.icon_image} alt="icon-image" />
+              <ScrollAnimationRight>
+                <div className={styles.store_names_wrapper}>
+                  {stores.map((store: any, idx: number) => {
+                    return (
+                      idx % 2 === 0 && (
+                        <div key={idx} className={styles.store_card}>
+                          <div className={styles.icon_image}>
+                            <img src={store.icon_image} alt="icon-image" />
+                          </div>
+                          <h3>{store.title}</h3>
                         </div>
-                        <h3>{store.title}</h3>
-                      </div>
-                    )
-                  );
-                })}
-              </div>
-              <div className={styles.store_names_wrapper}>
-                {stores.map((store: any, idx: number) => {
-                  return (
-                    idx % 2 === 1 && (
-                      <div key={idx} className={styles.store_card}>
-                        <div className={styles.icon_image}>
-                          <img src={store.icon_image} alt="icon-image" />
+                      )
+                    );
+                  })}
+                </div>
+              </ScrollAnimationRight>
+              <ScrollAnimationRight>
+                <div className={styles.store_names_wrapper}>
+                  {stores.map((store: any, idx: number) => {
+                    return (
+                      idx % 2 === 1 && (
+                        <div key={idx} className={styles.store_card}>
+                          <div className={styles.icon_image}>
+                            <img src={store.icon_image} alt="icon-image" />
+                          </div>
+                          <h3>{store.title}</h3>
                         </div>
-                        <h3>{store.title}</h3>
-                      </div>
-                    )
-                  );
-                })}
-              </div>
+                      )
+                    );
+                  })}
+                </div>
+              </ScrollAnimationRight>
             </div>
           </div>
         </div>

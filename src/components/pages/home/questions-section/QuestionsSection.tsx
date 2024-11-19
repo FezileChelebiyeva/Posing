@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./QuestionsSection.module.scss";
 import faqImg from "../../../../assets/images/home/questions-section/faq_img.png";
 import QuestionsCollapse from "./questions-collapse/QuestionsCollapse";
-import ScrollAnimation from "../../../shared/ScrollAnimation/ScrollAnimation";
+import ScrollAnimation from "../../../shared/Animations/ScrollAnimation/ScrollAnimation";
+import ScrollAnimationImg from "../../../shared/Animations/ScrollAnimationImg/ScrollAnimationImg";
 
 const QuestionsSection = () => {
   return (
@@ -16,7 +17,9 @@ const QuestionsSection = () => {
 
           <div className={styles.questions_content}>
             <div className={styles.section_image}>
-              <img src={faqImg} alt="questions" />
+              <ScrollAnimationImg>
+                <img src={faqImg} alt="questions" />
+              </ScrollAnimationImg>
             </div>
             <div className={styles.questions_accordion}>
               <QuestionsCollapse />
