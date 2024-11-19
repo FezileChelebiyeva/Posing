@@ -27,7 +27,7 @@ const Header = () => {
               <ul className={styles.navlink_lists}>
                 {navigation.map((nav, i) => (
                   <li key={i} className={styles.nav_list}>
-                    <a className={styles.link} href={nav.path}>
+                    <a onClick={() => setMenuBar(false)} className={styles.link} href={nav.path}>
                       {nav.name}
                     </a>
                   </li>
