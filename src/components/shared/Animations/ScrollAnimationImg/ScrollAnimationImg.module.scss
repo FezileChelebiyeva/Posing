@@ -1,8 +1,10 @@
 .scrollAnimation {
   width: 100%;
   opacity: 0;
-  transform: translateX(-30%);
+  transform: translate3d(-35px, 0, 0);
   transition: all 1.5s ease-out;
+  animation-duration: 1s;
+  animation-delay: 1s;
   display: flex;
   justify-content: center;
   align-items: center;
