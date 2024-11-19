@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./Header.module.scss";
 import siteLogo from "../../assets/images/site-logo/logo.svg";
 import { Link } from "react-router-dom";
@@ -6,8 +6,7 @@ import { navigation } from "../../constants/navigation.constant";
 import Button from "../../components/shared/Button/MainButton";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Modal } from "antd";
-import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../../redux/store";
+import { useDispatch } from "react-redux";
 import {
   setForgetPassword,
   setLoginRegister,
