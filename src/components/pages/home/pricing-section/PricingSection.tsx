@@ -30,39 +30,41 @@ const PricingSection = () => {
                     </div>
                     <p className={styles.offer_free}>Get 7 Days Free Trial</p>
                   </div>
-                  <ul className={styles.pricing_features}>
-                    {element.features.map((el: any, idx: number) => {
-                      return (
-                        <li key={idx} className={styles.features_lists}>
-                          {el.active ? (
-                            <div className={styles.feture_row}>
-                              <div className={styles.active_icon}>
-                                <AiOutlineCheck
-                                  color="#fff"
-                                  fontSize={"14px"}
-                                />
+                  <div className={styles.pricing_features_box}>
+                    <ul className={styles.pricing_features}>
+                      {element.features.map((el: any, idx: number) => {
+                        return (
+                          <li key={idx} className={styles.features_lists}>
+                            {el.active ? (
+                              <div className={styles.feture_row}>
+                                <div className={styles.active_icon}>
+                                  <AiOutlineCheck
+                                    color="#fff"
+                                    fontSize={"14px"}
+                                  />
+                                </div>
+                                <p className={styles.active_feature}>
+                                  {el.feature}
+                                </p>
                               </div>
-                              <p className={styles.active_feature}>
-                                {el.feature}
-                              </p>
-                            </div>
-                          ) : (
-                            <div className={styles.feture_row}>
-                              <div className={styles.deactive_icon}>
-                                <AiOutlineClose
-                                  color="#fff"
-                                  fontSize={"14px"}
-                                />
+                            ) : (
+                              <div className={styles.feture_row}>
+                                <div className={styles.deactive_icon}>
+                                  <AiOutlineClose
+                                    color="#fff"
+                                    fontSize={"14px"}
+                                  />
+                                </div>
+                                <p className={styles.deactive_feature}>
+                                  {el.feature}
+                                </p>
                               </div>
-                              <p className={styles.deactive_feature}>
-                                {el.feature}
-                              </p>
-                            </div>
-                          )}
-                        </li>
-                      );
-                    })}
-                  </ul>
+                            )}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
                   <div className={styles.buy_btn}>
                     <Button text="Buy now" />
                   </div>
