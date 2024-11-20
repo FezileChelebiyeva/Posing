@@ -7,6 +7,9 @@
     .contact_details {
       width: 40%;
       .section_head {
+        .first_title {
+          text-align: left;
+        }
         .section_title {
           font-size: 42px;
           margin-top: 10px;
@@ -108,6 +111,9 @@
       .contact_details {
         .section_head {
           text-align: center;
+          .first_title {
+            text-align: center;
+          }
           .section_title {
             font-size: 30px;
             line-height: 32px;

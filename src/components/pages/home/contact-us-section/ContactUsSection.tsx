@@ -11,7 +11,9 @@ const ContactUsSection = () => {
         <div className={styles.contact_us_section}>
           <div className={styles.contact_details}>
             <div className={styles.section_head}>
-              <ScrollAnimation>Contract Us </ScrollAnimation>
+              <ScrollAnimation>
+                <div className={styles.first_title}>Contract Us</div>{" "}
+              </ScrollAnimation>
               <h1 className={styles.section_title}>
                 If you have any quiries, fill free to contact us
               </h1>
