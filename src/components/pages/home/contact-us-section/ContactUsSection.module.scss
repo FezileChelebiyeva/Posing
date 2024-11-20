@@ -7,9 +7,6 @@
     .contact_details {
       width: 40%;
       .section_head {
-        .first_title {
-          color: #52c8c4;
-        }
         .section_title {
           font-size: 42px;
           margin-top: 10px;
@@ -18,14 +15,16 @@
         }
       }
       .detail_infos {
-        display: flex;
-        flex-direction: column;
-        row-gap: 30px;
-        margin-top: 50px;
-        .contact_kinds_info {
+        .div {
           display: flex;
-          align-items: center;
-          column-gap: 20px;
+          flex-direction: column;
+          row-gap: 30px;
+          margin-top: 50px;
+          .contact_kinds_info {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+          }
         }
       }
     }
@@ -108,6 +107,7 @@
     .contact_us_section {
       .contact_details {
         .section_head {
+          text-align: center;
           .section_title {
             font-size: 30px;
             line-height: 32px;
@@ -115,7 +115,18 @@
           }
         }
       }
+      .detail_infos {
+        display: flex;
+        justify-content: center;
+        h3,
+        p {
+          font-size: 14px;
+        }
+      }
       .form_section {
+        .form_title {
+          text-align: center;
+        }
         .form {
           .input_control {
             flex-direction: column;
