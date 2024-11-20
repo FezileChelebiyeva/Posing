@@ -12,52 +12,55 @@
     .facts_section {
       .facts_container {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
         background-color: #6990ff;
         border-radius: 10px;
         padding: 80px 40px;
-        .fact_card {
-          width: 24%;
+        .facts_contents {
+          width: 100%;
           display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
           align-items: center;
-          column-gap: 15px;
-          padding: 15px 5px 15px 15px;
-          border-right: 1px solid rgba(255, 255, 255, 0.2);
-          position: relative;
-          .fact_icon {
-            height: 70px;
-            width: 70px;
-            border-radius: 50%;
-            background-color: #fff;
+          gap: 10px;
+          .fact_card {
+            width: 24%;
             display: flex;
-            justify-content: center;
             align-items: center;
-            img {
-              width: 60%;
-              height: 60%;
-              object-fit: cover;
+            column-gap: 15px;
+            padding: 15px 5px 15px 15px;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            .fact_icon {
+              height: 70px;
+              width: 70px;
+              border-radius: 50%;
+              background-color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 60%;
+                height: 60%;
+                object-fit: cover;
+              }
             }
-          }
-          .fact_counter {
-            .counter_number {
-              font-size: 40px;
-              color: #fff;
-              font-family: "Poppins", sans-serif;
+            .fact_counter {
+              .counter_number {
+                font-size: 40px;
+                color: #fff;
+                font-family: "Poppins", sans-serif;
+              }
+              .fact_title {
+                font-size: 20px;
+                font-family: "Poppins", sans-serif;
+                color: #ffffffa6;
+                margin-top: 5px;
+              }
             }
-            .fact_title {
-              font-size: 20px;
-              font-family: "Poppins", sans-serif;
-              color: #ffffffa6;
-              margin-top: 5px;
+            &:last-child {
+              border: 0;
+              padding: 15px 5px;
             }
-          }
-          &:last-child {
-            border: 0;
-            padding: 15px 5px;
           }
         }
       }
@@ -71,8 +74,10 @@
         .facts_container {
           padding: 80px 40px;
           border-radius: 0;
-          .fact_card {
-            width: 24%;
+          .facts_contents {
+            .fact_card {
+              width: 24%;
+            }
           }
         }
       }
@@ -89,10 +94,12 @@
           padding: 60px 45px;
           border-radius: 0;
           row-gap: 50px;
-          .fact_card {
-            width: 48%;
-            border: 0;
-            padding: 0;
+          .facts_contents {
+            .fact_card {
+              width: 48%;
+              border: 0;
+              padding: 0;
+            }
           }
         }
       }
@@ -114,10 +121,17 @@
     .container_facts_section {
       .facts_section {
         .facts_container {
-          justify-content: center;
+          width: 100%;
           padding: 40px 25px;
-          .fact_card {
-            width: 100%;
+          .facts_contents {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 35px;
+            .fact_card {
+              width: 300px;
+            }
           }
         }
       }
