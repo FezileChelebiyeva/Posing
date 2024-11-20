@@ -15,18 +15,17 @@ const AboutSection = () => {
             </ScrollAnimationImg>
           </div>
           <div className={styles.about_details}>
-            <p className={styles.first_title}>About The POS</p>
+            <ScrollAnimation>
+              <div className={styles.first_title}>About The POS</div>
+            </ScrollAnimation>
             <h1 className={styles.about_title}>
               Best solution for point of sale about details
             </h1>
             <p className={styles.about_subtitle}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p className={styles.about_subtitle}>
-              Lorem Ipsum the & been the industry's. It was popularised in the
-              1960s with the release of Letraset sheets containing Lorem Ipsum
-              passages.
+              industry. Lorem Ipsum the & been the industry's. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages.
             </p>
             <div className={styles.information_section}>
               <div className={styles.left_section}>

@@ -19,9 +19,7 @@
     .about_details {
       width: 50%;
       .first_title {
-        font-size: 16px;
-        line-height: 18px;
-        color: #52c8c4;
+        text-align: left;
       }
       .about_title {
         font-size: 42px;
@@ -33,7 +31,7 @@
       }
       .about_subtitle {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 26px;
         color: #6b6b6b;
         margin-bottom: 2px;
       }
@@ -115,12 +113,19 @@
     }
   }
   @media (max-width: 576px) {
-    padding: 30px 0;
+    padding: 30px 0;  
     .about_section {
       .about_details {
+        .first_title {
+          text-align: center;
+        }
         .about_title {
           font-size: 30px;
           line-height: 32px;
+          text-align: center;
+        }
+        .about_subtitle {
+          text-align: center;
         }
         .information_section {
           flex-direction: column-reverse;
