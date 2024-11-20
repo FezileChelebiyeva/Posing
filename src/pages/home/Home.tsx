@@ -14,7 +14,7 @@ import ContactUsSection from "../../components/pages/home/contact-us-section/Con
 
 const Home = () => {
   return (
-    <div>
+    <div id="#">
       <HeroSection />
       <InventorySection />
       <AboutSection />

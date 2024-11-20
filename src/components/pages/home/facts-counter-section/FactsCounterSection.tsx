@@ -16,7 +16,7 @@ const FactsCounterSection = () => {
           }
         });
       },
-      { threshold: 0.8 }
+      { threshold: 1 }
     );
 
     if (sectionRef.current) {

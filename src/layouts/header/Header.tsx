@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "./Header.module.scss";
 import siteLogo from "../../assets/images/site-logo/logo.svg";
-import { Link } from "react-router-dom";
 import { navigation } from "../../constants/navigation.constant";
 import Button from "../../components/shared/Button/MainButton";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -33,9 +32,9 @@ const Header = () => {
       <div className="container">
         <div className={styles.header}>
           <div className={styles.logo}>
-            <Link to={"/"}>
+            <a href="/">
               <img src={siteLogo} alt="site-logo" />
-            </Link>
+            </a>
           </div>
           <div
             className={`${styles.navbar}  ${

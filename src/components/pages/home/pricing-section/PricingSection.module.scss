@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 80px 0;
+  padding: 100px 0;
   .pricing_section {
     .section_head {
       display: flex;
@@ -152,7 +152,8 @@
     }
   }
   @media (max-width: 993px) {
-    padding: 50px 0;
+    padding-top: 80px;
+    padding-bottom: 50px;
     .pricing_section {
       .pricing_cards {
         margin-top: 20px;
@@ -174,7 +175,7 @@
     }
   }
   @media (max-width: 576px) {
-    padding: 30px 0;
+    padding-bottom: 30px;
     .pricing_section {
       .section_head {
         .section_title {

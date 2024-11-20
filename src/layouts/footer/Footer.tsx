@@ -5,7 +5,6 @@ import instagram from "../../assets/images/footer/social-media-icons/instagram.s
 import sections from "../../constants/footerSections.constant";
 import Button from "../../components/shared/Button/MainButton";
 import logo_light from "../../assets/images/site-logo/logo_light.svg";
-import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer id={styles.footer}>
@@ -13,9 +12,9 @@ const Footer = () => {
         <div className="container">
           <div className={styles.footer}>
             <div className={styles.footer_info}>
-              <Link to={"/"}>
+              <a href="/">
                 <img src={logo_light} alt="footer-logo" />
-              </Link>
+              </a>
               <p className={styles.info_subtitle}>
                 On the other hand, we denounce with righteous indignation and
                 dislike men who are so
