@@ -19,13 +19,14 @@ const FactsCounterSection = () => {
       { threshold: 0.5 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentSectionRef = sectionRef.current;
+    if (currentSectionRef) {
+      observer.observe(currentSectionRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSectionRef) {
+        observer.unobserve(currentSectionRef);
       }
     };
   }, []);
@@ -40,7 +41,7 @@ const FactsCounterSection = () => {
                 return (
                   <div key={idx} className={styles.fact_card}>
                     <div className={styles.fact_icon}>
-                      <img src={element.icon_image} alt="icon-image" />
+                      <img src={element.icon_image} alt="icon" />
                     </div>
                     <div className={styles.fact_counter}>
                       <h1 className={styles.counter_number}>
@@ -48,13 +49,9 @@ const FactsCounterSection = () => {
                           <SlotCounter
                             value={
                               element.number >= 1000
-                                ? String(
-                                    element.plus
-                                      ? element.number / 1000 + "k" + "+"
-                                      : element.number / 1000 + "k"
-                                  )
+                                ? `${element.plus ? element.number / 1000 + "k+" : element.number / 1000 + "k"}`
                                 : element.plus
-                                ? String(element.number + "+")
+                                ? `${element.number}+`
                                 : element.number
                             }
                             duration={2}

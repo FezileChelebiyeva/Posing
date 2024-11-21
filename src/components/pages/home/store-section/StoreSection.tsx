@@ -18,7 +18,7 @@ const StoreSection = () => {
           <div className={styles.store_contents}>
             <div className={styles.store_image}>
               <ScrollAnimationImg>
-                <img src={retailStore} alt="store-image" />
+                <img src={retailStore} alt="store" />
               </ScrollAnimationImg>
             </div>
             <div className={styles.store_names}>
@@ -29,7 +29,7 @@ const StoreSection = () => {
                       idx % 2 === 0 && (
                         <div key={idx} className={styles.store_card}>
                           <div className={styles.icon_image}>
-                            <img src={store.icon_image} alt="icon-image" />
+                            <img src={store.icon_image} alt="icon" />
                           </div>
                           <h3>{store.title}</h3>
                         </div>
@@ -45,7 +45,7 @@ const StoreSection = () => {
                       idx % 2 === 1 && (
                         <div key={idx} className={styles.store_card}>
                           <div className={styles.icon_image}>
-                            <img src={store.icon_image} alt="icon-image" />
+                            <img src={store.icon_image} alt="icon" />
                           </div>
                           <h3>{store.title}</h3>
                         </div>

@@ -58,7 +58,7 @@ const NewsSection = () => {
                   <SwiperSlide key={i}>
                     <div className={styles.news_card}>
                       <div className={styles.news_image}>
-                        <img src={news.image} alt="news-image" />
+                        <img src={news.image} alt="news" />
                       </div>
                       <div className={styles.news_details}>
                         <div className={styles.news_info}>
@@ -73,7 +73,7 @@ const NewsSection = () => {
                         </div>
                         <h2 className={styles.news_title}>{news.title}</h2>
                         <div className={styles.more_btn}>
-                          <a className={styles.read_more_link} href="">
+                          <a className={styles.read_more_link} href="/">
                             Read More
                           </a>
                           <AiOutlineArrowRight color="#6990ff" />

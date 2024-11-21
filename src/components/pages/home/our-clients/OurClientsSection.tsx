@@ -78,7 +78,7 @@ const OurClientsSection = () => {
                       <p className={styles.client_comment}>{client.comment}</p>
                       <div className={styles.client_details}>
                         <div className={styles.client_image}>
-                          <img src={client.image} alt="client-image" />
+                          <img src={client.image} alt="client" />
                         </div>
                         <div className={styles.client_info}>
                           <h3 className={styles.client_name}>{client.name}</h3>

@@ -19,7 +19,6 @@
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
     "react-slot-counter": "^3.0.1",
-    "sass": "^1.80.7",
     "swiper": "^11.1.14",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -47,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3"
   }
 }

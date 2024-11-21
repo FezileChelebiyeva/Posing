@@ -20,13 +20,13 @@ const Footer = () => {
                 dislike men who are so
               </p>
               <div className={styles.footer_icons}>
-                <a className={styles.social_media_icon}>
+                <a className={styles.social_media_icon} href="/">
                   <img src={facebook} alt="facebook" />
                 </a>
-                <a className={styles.social_media_icon}>
+                <a className={styles.social_media_icon} href="/">
                   <img src={twitter} alt="twitter" />
                 </a>
-                <a className={styles.social_media_icon}>
+                <a className={styles.social_media_icon} href="/">
                   <img src={instagram} alt="instagram" />
                 </a>
               </div>

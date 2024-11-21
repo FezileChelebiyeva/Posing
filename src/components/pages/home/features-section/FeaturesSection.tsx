@@ -16,7 +16,7 @@ const FeaturesSection = () => {
                 <div key={idx} className={styles.features_card}>
                   <div className={styles.shadow}>
                     <div className={styles.icon_image}>
-                      <img src={card.icon_image} alt="" />
+                      <img src={card.icon_image} alt="icon" />
                     </div>
                   </div>
                   <div className={styles.card_detail}>

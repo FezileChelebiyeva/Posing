@@ -53,7 +53,7 @@ const PartnersSection = () => {
                   <SwiperSlide key={i}>
                     <div className={styles.partner_card}>
                       <div>
-                        <img src={partner.image} alt="partner-image" />
+                        <img src={partner.image} alt="partner" />
                       </div>
                     </div>
                   </SwiperSlide>

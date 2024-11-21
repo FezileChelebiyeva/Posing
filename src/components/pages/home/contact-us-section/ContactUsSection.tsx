@@ -27,7 +27,7 @@ const ContactUsSection = () => {
               <div className={styles.div}>
                 <div className={styles.contact_kinds_info}>
                   <div>
-                    <img src={contact_icon1} alt="contact-icon" />
+                    <img src={contact_icon1} alt="contact" />
                   </div>
                   <div>
                     <h3>Address</h3>
@@ -37,7 +37,7 @@ const ContactUsSection = () => {
 
                 <div className={styles.contact_kinds_info}>
                   <div>
-                    <img src={contact_icon2} alt="contact-icon" />
+                    <img src={contact_icon2} alt="contact" />
                   </div>
                   <div>
                     <h3>Contract Number</h3>
@@ -47,7 +47,7 @@ const ContactUsSection = () => {
 
                 <div className={styles.contact_kinds_info}>
                   <div>
-                    <img src={contact_icon3} alt="contact-icon" />
+                    <img src={contact_icon3} alt="contact" />
                   </div>
                   <div>
                     <h3> Email Address</h3>

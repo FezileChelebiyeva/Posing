@@ -17,7 +17,7 @@ const InventorySection = () => {
                 <div key={idx} className={styles.inventory_card}>
                   <div className={styles.shadow}>
                     <div className={styles.icon_image}>
-                      <img src={card.icon_image} alt="" />
+                      <img src={card.icon_image} alt="icon" />
                     </div>
                   </div>
                   <h3 className={styles.card_title}>{card.title}</h3>

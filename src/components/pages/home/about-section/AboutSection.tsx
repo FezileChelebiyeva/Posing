@@ -11,7 +11,7 @@ const AboutSection = () => {
         <div className={styles.about_section}>
           <div className={styles.about_image}>
             <ScrollAnimationImg>
-              <img src={aboutImg} alt="About Image" />
+              <img src={aboutImg} alt="About" />
             </ScrollAnimationImg>
           </div>
           <div className={styles.about_details}>
@@ -31,7 +31,7 @@ const AboutSection = () => {
               <div className={styles.left_section}>
                 <div className={styles.info_card}>
                   <div className={styles.tick_icon}>
-                    <img src={iconTick} alt="tick-icon" />
+                    <img src={iconTick} alt="tick" />
                   </div>
                   <div className={styles.info_text}>
                     <h3 className={styles.info_title}>
@@ -46,7 +46,7 @@ const AboutSection = () => {
                 </div>
                 <div className={styles.info_card}>
                   <div className={styles.tick_icon}>
-                    <img src={iconTick} alt="tick-icon" />
+                    <img src={iconTick} alt="tick" />
                   </div>
                   <div className={styles.info_text}>
                     <h3 className={styles.info_title}>

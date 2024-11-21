@@ -24,7 +24,7 @@ const HeroSection = () => {
           </div>
           <div className={styles.hero_image}>
             <ScrollAnimationImgRight className="right">
-              <img src={heroImage} alt="hero_image" />
+              <img src={heroImage} alt="hero" />
             </ScrollAnimationImgRight>
           </div>
         </div>
