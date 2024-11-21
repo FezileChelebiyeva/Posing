@@ -16,7 +16,7 @@ const FactsCounterSection = () => {
           }
         });
       },
-      { threshold: 0.9 }
+      { threshold: 0.5 }
     );
 
     if (sectionRef.current) {
@@ -57,6 +57,8 @@ const FactsCounterSection = () => {
                                 ? String(element.number + "+")
                                 : element.number
                             }
+                            duration={2}
+                            speed={20}
                           />
                         )}
                       </h1>
