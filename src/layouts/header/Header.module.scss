@@ -52,6 +52,7 @@
           background: linear-gradient(to right, #398c89 50%, #52c8c4 50%);
           background-size: 200% 100%;
           background-position: right bottom;
+          padding: 8px 15px;
           &:hover {
             background-position: left bottom;
           }
@@ -124,9 +125,9 @@
         background-color: #fff;
         border-top: 1px solid #e5e5e5;
         z-index: 100;
-        max-height: 0;
+        height: 0;
         overflow: hidden;
-        transition: max-height 0.6s ease;
+        transition: height 0.8s ease;
         .navlink_lists {
           width: 100%;
           flex-direction: column;
@@ -151,11 +152,10 @@
         }
       }
       .active_navbar {
-        max-height: 300px;
+        height: 285px;
       }
     }
   }
-
   @media (max-width: 576px) {
     .header {
       .logo {

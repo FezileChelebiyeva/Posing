@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Header.module.scss";
 import siteLogo from "../../assets/images/site-logo/logo.svg";
 import { navigation } from "../../constants/navigation.constant";
@@ -17,8 +17,22 @@ const Header = () => {
   const [isLoginModalVisible, setIsLoginModalVisible] = useState(false);
 
   const dispatch = useDispatch();
+  const navbarRef = useRef<HTMLDivElement>(null);
 
-  // show-cancel login modal
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setMenuBar(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+
   const showLoginModal = () => {
     setIsLoginModalVisible(true);
   };
@@ -37,6 +51,7 @@ const Header = () => {
             </a>
           </div>
           <div
+            ref={navbarRef}
             className={`${styles.navbar}  ${
               menuBar ? styles.active_navbar : ""
             }`}
